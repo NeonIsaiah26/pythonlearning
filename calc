@@ -7,6 +7,9 @@ while True:
     if rate == "":
         print("Error: Rate cannot be empty(Type exit to exit).")
         continue
+    if not rate.isdigit():
+        print("Error: Random letters or symbols are not allowed! Please try again.")
+        continue
     if rate == "exit":
         break
     else:
