@@ -1,0 +1,17 @@
+#nested decision
+
+x = 42
+if x > 1:
+    print('more than 1')
+    if x < 100:
+        print('less than 100')
+print('all done')
+
+print('=========================================')
+#two way decision
+x = 20
+if x > 10:
+    print('bigger')
+else:
+    print('smaller')
+print('all done')
