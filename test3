@@ -2,3 +2,10 @@ big = max('Hello world')
 print(big)
 big = min('Hello world')
 print(big)
+
+def func(x) :
+    print(x)
+
+func(10)
+func(20)
+
