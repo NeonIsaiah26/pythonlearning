@@ -8,23 +8,23 @@ while True:
         print("Error: Rate cannot be empty(Type exit to exit).")
         continue
     if not rate.isdigit():
+        if rate == "exit":
+            break
         print("Error: Random letters or symbols are not allowed! Please try again.")
         continue
-    if rate == "exit":
-        break
     else:
-            hrs = input("Enter Hours: ")
-            if hrs == '0':
-                print("Error: Hours cannot be zero.")
-                continue
-            if hrs == "":
-                print("Error: Hours cannot be empty.")
-                continue
-            if hrs == "exit":
-                    break
-            else:
-                pay = float(hrs) * float(rate)
-                print('Pay: $',pay)
-                exit = input("Type exit to exit or press enter to continue: ")
-                if exit == "exit":
-                    break
+        hrs = input("Enter Hours: ")
+        if hrs == '0':
+            print("Error: Hours cannot be zero.")
+            continue
+        if hrs == "":
+            print("Error: Hours cannot be empty.")
+            continue
+        if hrs == "exit":
+            break
+        else:
+            pay = float(hrs) * float(rate)
+            print('Pay: $', pay)
+            exit = input("Type exit to exit or press enter to continue: ")
+            if exit == "exit":
+                break
