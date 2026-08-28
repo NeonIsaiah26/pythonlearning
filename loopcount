@@ -1,4 +1,5 @@
 #finding the largest value
+#smallest_so_far = None for finding the smallest value
 largest_so_far = -1
 print('Before:', largest_so_far)
 for the_num in [9, 41, 12, 3, 74, 15]:
