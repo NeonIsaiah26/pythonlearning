@@ -1,4 +1,4 @@
-def computepay():
+def compute_pay(hours, rate):
     if hours > 40:
 
         normal_pay = 40 * rate
@@ -10,12 +10,13 @@ def computepay():
         
     return total_pay
 
-hrs = input("Enter Hours: ")
-reyt = input("Enter Rate: ")
-
-hours = float(hrs)
-rate = float(reyt)
-
-gross_pay = computepay()
-
-print("Pay:", gross_pay)
+if __name__ == "__main__":
+    hrs = input("Enter Hours: ")
+    reyt = input("Enter Rate: ")
+    
+    hours = float(hrs)
+    rate = float(reyt)
+    
+    gross_pay = compute_pay(hours, rate)
+    
+    print("Pay:", gross_pay)
