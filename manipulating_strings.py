@@ -1,37 +1,37 @@
-# def lowercase():
-#     greet = 'Hello Bob'
-#     zap = greet.lower()
-#     print(zap)
-# lowercase()
+def convert_case(my_string, con):
+    if con == "lower":
+        x = my_string.lower()
+    elif con == "upper":
+        x = my_string.upper()
+    return x
 
-# # for uppercase just type upper instead of lower
-# # ====================================================================================================================================
-# # searching a string
+# for uppercase just type upper instead of lower
+# ====================================================================================================================================
+# searching a string
 
-# def searching_string():
-#   fruit = 'banana'
-#   pos = fruit.find('na')
-#   print(pos)
+def searching_string(my_string, word, start, end):
+  pos = my_string.find(word, start, end)
+  if pos == -1:
+     print("Cannot find the word you are looking")
+  else:
+     print(pos)
+# ====================================================================================================================================
+# Search and replace
 
-# aa = fruit.find('z')
-# print(aa)
+def replace_txt(my_string,old_word, new_word):
+  nstr = my_string.replace(old_word, new_word)
+  return(nstr)
 
-# # ====================================================================================================================================
-# # Search and replace
+# ====================================================================================================================================
+# parsing and extracting 
 
-# def replace_txt():
-#   greet = 'hello bob'
-#   nstr = greet.replace('bob', 'jane')
-#   print(nstr)
-
-# # ====================================================================================================================================
-# # parsing and extracting 
-
-def parse_extract():
-    data = 'From neon.isaiah@gmail.com Sat Jan 5 09:14:16 2008'
+def parse_extract(data):
     atpos = data.find('@')
     sppos = data.find(' ', atpos)
     host = data [atpos + 1 : sppos]
-    print(host)
-    
-parse_extract()
+    print(f'The host is: {host}')
+
+
+# ====================================================================================================================================
+# data = 'From neon.isaiah@yahoo.com Sat Jan 5 09:14:16 2008'
+# parse_extract(data)

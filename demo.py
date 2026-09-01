@@ -1,3 +1,7 @@
-from stringtest import apple_string
+from manipulating_strings import replace_txt
 
-apple_string()
+my_string = 'Neon Isaiah De Jesus'
+print(f"\nOld string: {my_string}\n")
+x = replace_txt(my_string, 'Isaiah', 'Jeremiah')
+print(f"New string: {x}\n")
+
