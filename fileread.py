@@ -37,9 +37,15 @@ def search_string(file_name, search):
 # Excluding lines that start with a specific string and printing the rest of the lines
 def exclude_string(file_name, exclude):
     handle = open(file_name)
-    countlines(file_name)
     for lines in handle:
         if not lines.startswith(exclude):
             print(lines.strip())
 
-exclude_string('text.txt', 'Ken')
+# Using in to select lines that contain a specific string and printing those lines
+def host_finder(file_name, search):
+    handle = open(file_name)
+    for lines in handle:
+        if search in lines:
+            print(lines.strip())
+    handle.close()
+
