@@ -31,7 +31,7 @@ def search_string(file_name, search):
     handle = open(file_name)
     countlines(file_name)
     for lines in handle:
-        if lines.startswith(search):
+        if lines.lower().startswith(search.lower()):
             print(lines.strip())
 
 # Excluding lines that start with a specific string and printing the rest of the lines
@@ -42,11 +42,12 @@ def exclude_string(file_name, exclude):
             print(lines.strip())
 
 # Using in to select lines that contain a specific string and printing those lines
-def host_finder(file_name, search):
+def email_finder(file_name, search):
     handle = open(file_name)
     for lines in handle:
         if search in lines:
             print(lines.strip())
     handle.close()
+
 
 

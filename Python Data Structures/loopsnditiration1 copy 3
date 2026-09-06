@@ -1,0 +1,11 @@
+for i in range(5+1):
+    print(i)
+
+
+#another example 
+friends = ["John", "Mike", "Sarah", "Jessica"]
+for friend in friends:
+    print(f"Nice to see you, {friend}!")
+print("Done")
+    # u can also do print("Nice to see you!", friend)
+    
