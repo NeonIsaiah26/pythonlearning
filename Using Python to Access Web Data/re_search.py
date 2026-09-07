@@ -7,10 +7,10 @@
 
 import re
 # def re_search(my_file):
-#     file = open(my_file)
-#     for line in file:
-#         line = line.rstrip()
-#         if re.search('Ken to ', line):
+#     with open(my_file) as file:
+#       for line in file:
+#           line = line.rstrip()
+#           if re.search('Ken to ', line):
 #             print(line)
 
 # re_search('text.txt')

@@ -27,16 +27,15 @@
 #     print(data.decode())
 # mysock.close()
 
-# encode turns it to utf 8
+# encode turns it to utf 8/bytes
 # decode turns it back to unicode 
+
 
 
 import socket 
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 mysock.connect(('data.pr4e.org', 80))
-
-# Corrected path, line endings (\r\n), and added Host header
 cmd = 'GET /intro-short.txt HTTP/1.0\r\nHost: data.pr4e.org\r\n\r\n'.encode()
 mysock.send(cmd)
 
