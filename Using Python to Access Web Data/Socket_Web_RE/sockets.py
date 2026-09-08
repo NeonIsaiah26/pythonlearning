@@ -31,7 +31,7 @@
 # decode turns it back to unicode 
 
 
-
+import re
 import socket 
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -43,7 +43,15 @@ while True:
     data = mysock.recv(512)
     if len(data) < 1:
         break
-    print(data.decode(), end='')
+    lines = data.decode().split("\n")
 
+    for line in lines:
+        if re.findall(r"Server: ", line):
+            print("The server is ",line.split(": ")[1])
+    
 mysock.close()
+
+
+
+
 
