@@ -5,12 +5,11 @@
 #     print(line.decode().strip())
 
 
-
-import urllib.request
-import ssl
-
-fhand = urllib.request.urlopen('https://data.pr4e.org/romeo.txt')
-counts = dict()
+def web_connect(my_site):
+    import urllib.request
+    import ssl
+    fhand = urllib.request.urlopen(my_site)
+    counts = dict()
 
 # for line in fhand:
 #     decoded_line = line.decode().strip()
