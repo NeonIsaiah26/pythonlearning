@@ -1,5 +1,0 @@
-def happy_birthday(name, age):
-    print(f"Happy birthday {name}! You are {age} Years old now.")
-
-happy_birthday("Ken", 21)
-happy_birthday("Erd", 15)

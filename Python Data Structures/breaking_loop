@@ -1,5 +1,0 @@
-while True:
-    test = input("Type 'exit' to quit: ")
-    if test == 'exit':
-        break
-    print('done')
