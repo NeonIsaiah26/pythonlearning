@@ -1,0 +1,94 @@
+# Start Tag : <person>, <name>, <phone>
+# End tag : </person>, </name>, </phone>
+# Text Content : Chuck, +1 734 303 4456
+# Attribute : type="intl", hide="yes"
+# Self closing tag : <email {attribute}/> 
+
+# White space doesn't matter 
+
+<person>
+    <name>Chuck</name>
+    <phone type = "intl">
+        +1 734 303 4456
+    </phone>
+    <email hide="yes"/>
+</person>
+
+
+
+# EXAMPLE
+
+<recipe name="bread" prep_time="5 mins" cook_time="3 hours">
+    <title>Basic bread</title>
+    <ingredient amount="8" unit="dL">Flour</ingredient>
+    <ingredient amount="10" unit="grams ">Yeast</ingredient>
+    <ingredient amount="4" unit="dL" state="warm">Water</ingredient> <ingredient amount="1" unit="teaspoon ">Salt</ingredient>
+    <instructions>
+        <step>Mix all ingredients together.</step>
+        <step>Knead thoroughly.</step>
+        <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Knead again. </step>
+        <step>Place in a bread baking tin.</step>
+        <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Bake in the oven at 180 (degrees) C for 30 minutes.</step>
+    </instructions>
+</recipe>
+
+# Tags - indicate the beginning and ending of elements
+# Attributes - Keyword/value pairs on the opening tag of XML
+# Serialize / De-Serialize - Convert data in one program into a common format that can be stored and/or transmitted between systems in a programming language-independent mannergit
+
+
+<person>
+XML Document
+<lastname>Severance</lastname>
+<age>17</age> -
+<dateborn>2001-04-17</dateborn>
+</person>
+
+XML Schema Contract
+<xs:complexType name="person">
+<xs:sequence>
+<xs:element name="lastname" type="xs:string"/> 
+<xs:element name="age" type="xs:integer"/> 
+<xs:element name="dateborn" type="xs:date"/> 
+</xs:sequence>
+</xs:complexType>
+
+==============================================================================
+
+XSD Constraint
+
+<xs:element name="person"> <xs:complexType>
+<xs:sequence>
+<xs:element name="full_name" type="xs:string" minOccurs="1" maxOccurs="1" />
+<xs:element name="child_name" type="xs:string"
+minOccurs="0" maxOccurs="10" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<person>
+
+
+<full_name>Tove Refsnes</full_name>
+<child_name>Hege</child_name>
+<child_name>Stale</child_name>
+<child_name>Jim</child_name>
+<child_name>Borge</child_name>
+</person>
+
+===============================================================================
+
+XSD Data Types
+
+<xs:element name="customer" type="xs:string"/> 
+<xs:element name="start" type="xs:date"/>
+<xs:element name="startdate" type="xs:dateTime"/> 
+<xs:element name="prize" type="xs:decimal"/> 
+<xs:element name="weeks" type="xs:integer"/>
+
+
+<customer>John Smith</customer>
+<start>2002-09-24</start>
+<startdate>2002-05-30T09:30:10Z</startdate>
+<prize>999.50</prize>
+<week>30</weeks
+
