@@ -40,6 +40,7 @@ while True:
         break
 
     # print(json.dumps(js, indent=4))
+    # print(json.dumps(js['features'], indent=4))
 
     lat = js['features'][0]['properties']['lat']
     lon = js['features'][0]['properties']['lon']
