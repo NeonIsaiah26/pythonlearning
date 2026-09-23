@@ -13,7 +13,8 @@ class Absents:
 
     def Absents2(myself):
         myself.x = myself.x + 1
-        print("==========================""\nAbsents", myself.x)       
+        print("==========================""\nAbsents", myself.x)    
+           
 an = Testing()
 bn = Absents()
 
