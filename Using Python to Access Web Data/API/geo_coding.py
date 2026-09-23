@@ -42,7 +42,8 @@ while True:
     # print(json.dumps(js, indent=4))
     # print(json.dumps(js['features'], indent=4))
 
-    lat = js['features'][0]['properties']['lat']
+    lat = js['features'][0]['properties'
+                            ]['lat']
     lon = js['features'][0]['properties']['lon']
     print('lat', lat, 'lon', lon)
     print('Location for: ', js['features'][0]['properties']['formatted'])
