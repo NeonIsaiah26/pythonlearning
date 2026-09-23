@@ -45,5 +45,5 @@ while True:
     lat = js['features'][0]['properties']['lat']
     lon = js['features'][0]['properties']['lon']
     print('lat', lat, 'lon', lon)
-    location = js['features'][0]['properties']['formatted']
-    print(location)
+    print('Location for: ', js['features'][0]['properties']['formatted'])
+    
