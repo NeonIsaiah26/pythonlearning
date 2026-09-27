@@ -1,5 +1,5 @@
 class Testing:
-    def __init__(self, z):
+    def __init__(self):
         self.x = 0
 
     def attendance(self):
@@ -19,10 +19,9 @@ class Absents:
 
 
 an = Testing()
-cn = Testing("Ken")
 bn = Absents()
 
-cn.attendance("Ken")
+
 an.attendance()
 an.attendance()
 an.attendance()
