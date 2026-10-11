@@ -1,4 +1,4 @@
-from object_life_cycle2 import Absents
+from pythonlearning.database.OOP.object_life_cycle2 import Absents
 
 x = Absents()
 

@@ -1,0 +1,15 @@
+# To create a table in SQL, you can use the following command:
+
+CREATE TABLE Users(
+	name VARCHAR(128),
+	email VARCHAR(128)
+
+DELETE FROM Users WHERE NAME='Neon Isaiah De Jesus';
+
+UPDATE Users SET LastName = 'Insert Last Name Here' WHERE ID = (insert ID here);
+
+
+# star means select all columns from the table.
+SELECT * FROM Users;
+SELECT * FROM Users WHERE email='neonisaiah@gmail.com'
+SELECT * FROM Users ORDER BY name ASC;
