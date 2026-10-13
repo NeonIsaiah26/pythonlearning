@@ -4,6 +4,8 @@ CREATE TABLE Users(
 	name VARCHAR(128),
 	email VARCHAR(128)
 
+INSERT INTO Users (name, email) VALUES ('Neon Isaiah De Jesus', 'neonisaiah@gmail.com');
+
 DELETE FROM Users WHERE NAME='Neon Isaiah De Jesus';
 
 UPDATE Users SET LastName = 'Insert Last Name Here' WHERE ID = (insert ID here);
@@ -13,3 +15,30 @@ UPDATE Users SET LastName = 'Insert Last Name Here' WHERE ID = (insert ID here);
 SELECT * FROM Users;
 SELECT * FROM Users WHERE email='neonisaiah@gmail.com'
 SELECT * FROM Users ORDER BY name ASC;
+
+
+SELECT COUNT(*) FROM Users; # shows the number of rows in the table
+
+
+UPDATE Users SET name='new name' WHERE # it will update the name of the user with the specified condition.
+
+ALTER TABLE Album ADD COLUMN Title TEXT;
+
+UPDATE Employees
+SET Department = 'Engineering', Salary = 85000
+WHERE EmployeeID = 102;
+
+
+'(insert into Track (title, rating, len, count, album_id, genre_id)
+values ('Pano', 5, 254, 0, 1, 1)
+
+insert into Track (title, rating, len, count, album_id, genre_id)
+values ('DELULU', 5, 196, 0, 1, 1)
+
+insert into Track (title, rating, len, count, album_id, genre_id)
+values ('Sinungaling', 5, 224, 0, 2, 2)
+
+insert into Track (title, rating, len, count, album_id, genre_id)
+values ('Dila', 5, 221, 0, 2, 2))'
+
+select Album.Title, Artist.Name from album join artist on Album.ArtistId = Artist.ArtistId;
